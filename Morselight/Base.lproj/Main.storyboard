@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Morselight" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,280 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="to0-yV-pWH" userLabel="ApplicationView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="morselight.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hp0-Fh-w2A">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="317" id="VRo-iw-S8L"/>
+                                            <constraint firstAttribute="width" constant="424" id="bxK-H2-zzY"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="VRo-iw-S8L"/>
+                                                <exclude reference="bxK-H2-zzY"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="VRo-iw-S8L"/>
+                                                <include reference="bxK-H2-zzY"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MorseTranslator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3c-aq-Laq" userLabel="HeadTitle">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="Jkz-JK-enS"/>
+                                            <constraint firstAttribute="width" constant="220" id="UJg-Yv-1CC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Jkz-JK-enS"/>
+                                                <exclude reference="UJg-Yv-1CC"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="89" y="8" width="212" height="41"/>
+                                            <mask key="constraints">
+                                                <include reference="Jkz-JK-enS"/>
+                                                <include reference="UJg-Yv-1CC"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="express with morse" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byb-fg-R5c" userLabel="SubTitle">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="LDx-fo-uIc"/>
+                                            <constraint firstAttribute="width" constant="131" id="hci-Vn-iea"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="LDx-fo-uIc"/>
+                                                <exclude reference="hci-Vn-iea"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="LDx-fo-uIc"/>
+                                                <include reference="hci-Vn-iea"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3j-fR-4Ih" userLabel="txtInputBox">
+                                        <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="cAw-7X-Cva"/>
+                                            <constraint firstAttribute="width" constant="200" id="gQO-jC-OHl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="cAw-7X-Cva"/>
+                                                <exclude reference="gQO-jC-OHl"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="cAw-7X-Cva"/>
+                                                <include reference="gQO-jC-OHl"/>
+                                            </mask>
+                                        </variation>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnI-En-eod" userLabel="btnMorseIT">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="RNs-Dx-3J7"/>
+                                            <constraint firstAttribute="width" constant="34" id="kJI-uL-zKF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" red="0.33330676020408168" green="0.043456555999039366" blue="0.19306406156166483" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="RNs-Dx-3J7"/>
+                                                <exclude reference="kJI-uL-zKF"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="RNs-Dx-3J7"/>
+                                                <include reference="kJI-uL-zKF"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="btn_PressOK:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sU4-vZ-usT"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="d7X-aX-R0L" userLabel="MorseLightImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="BUf-JY-2Je"/>
+                                            <constraint firstAttribute="height" constant="60" id="vFn-SE-UEF"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="BUf-JY-2Je"/>
+                                                <exclude reference="vFn-SE-UEF"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="BUf-JY-2Je"/>
+                                                <include reference="vFn-SE-UEF"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkG-nE-82g" userLabel="MorseResult">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="hLn-r6-xua"/>
+                                            <constraint firstAttribute="width" constant="299" id="yFa-rf-Xq9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="0.84996811224489799" green="0.16456898758624947" blue="0.18647866936890251" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="hLn-r6-xua"/>
+                                                <exclude reference="yFa-rf-Xq9"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="hLn-r6-xua"/>
+                                                <include reference="yFa-rf-Xq9"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="hp0-Fh-w2A" secondAttribute="centerX" id="Cvu-rg-QSf"/>
+                                    <constraint firstAttribute="centerX" secondItem="byb-fg-R5c" secondAttribute="centerX" id="GEb-fD-vQd"/>
+                                    <constraint firstItem="d7X-aX-R0L" firstAttribute="leading" secondItem="to0-yV-pWH" secondAttribute="leading" constant="4" id="GXh-Ad-bGu"/>
+                                    <constraint firstItem="X3c-aq-Laq" firstAttribute="top" secondItem="to0-yV-pWH" secondAttribute="top" constant="8" id="ODN-UF-854"/>
+                                    <constraint firstItem="b3j-fR-4Ih" firstAttribute="top" secondItem="byb-fg-R5c" secondAttribute="bottom" constant="30" id="OEm-dY-EgI"/>
+                                    <constraint firstAttribute="centerX" secondItem="X3c-aq-Laq" secondAttribute="centerX" id="Obr-4a-lVS"/>
+                                    <constraint firstItem="xkG-nE-82g" firstAttribute="leading" secondItem="to0-yV-pWH" secondAttribute="leading" constant="8" id="Oq5-1X-iCI"/>
+                                    <constraint firstAttribute="height" constant="300" id="S5y-5l-31D"/>
+                                    <constraint firstItem="mnI-En-eod" firstAttribute="leading" secondItem="to0-yV-pWH" secondAttribute="leading" constant="210" id="TFc-fk-P4s"/>
+                                    <constraint firstItem="d7X-aX-R0L" firstAttribute="top" secondItem="to0-yV-pWH" secondAttribute="top" constant="14" id="Ys8-6j-jpf"/>
+                                    <constraint firstItem="byb-fg-R5c" firstAttribute="top" secondItem="to0-yV-pWH" secondAttribute="top" constant="43" id="aiX-7H-ROu"/>
+                                    <constraint firstItem="xkG-nE-82g" firstAttribute="top" secondItem="byb-fg-R5c" secondAttribute="bottom" constant="8" id="daq-dE-gNp"/>
+                                    <constraint firstAttribute="centerY" secondItem="hp0-Fh-w2A" secondAttribute="centerY" id="lYN-CY-xju"/>
+                                    <constraint firstItem="mnI-En-eod" firstAttribute="top" secondItem="X3c-aq-Laq" secondAttribute="bottom" constant="45" id="qts-8o-vKO"/>
+                                    <constraint firstItem="b3j-fR-4Ih" firstAttribute="leading" secondItem="to0-yV-pWH" secondAttribute="leading" constant="4" id="sgz-Fh-cFl"/>
+                                    <constraint firstAttribute="width" constant="320" id="t1G-R8-xqw"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="hp0-Fh-w2A"/>
+                                        <exclude reference="X3c-aq-Laq"/>
+                                        <exclude reference="byb-fg-R5c"/>
+                                        <exclude reference="b3j-fR-4Ih"/>
+                                        <exclude reference="mnI-En-eod"/>
+                                        <exclude reference="d7X-aX-R0L"/>
+                                        <exclude reference="xkG-nE-82g"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="S5y-5l-31D"/>
+                                        <exclude reference="t1G-R8-xqw"/>
+                                        <exclude reference="GXh-Ad-bGu"/>
+                                        <exclude reference="Ys8-6j-jpf"/>
+                                        <exclude reference="Cvu-rg-QSf"/>
+                                        <exclude reference="lYN-CY-xju"/>
+                                        <exclude reference="Oq5-1X-iCI"/>
+                                        <exclude reference="daq-dE-gNp"/>
+                                        <exclude reference="ODN-UF-854"/>
+                                        <exclude reference="Obr-4a-lVS"/>
+                                        <exclude reference="OEm-dY-EgI"/>
+                                        <exclude reference="sgz-Fh-cFl"/>
+                                        <exclude reference="GEb-fD-vQd"/>
+                                        <exclude reference="aiX-7H-ROu"/>
+                                        <exclude reference="TFc-fk-P4s"/>
+                                        <exclude reference="qts-8o-vKO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="hp0-Fh-w2A"/>
+                                        <include reference="X3c-aq-Laq"/>
+                                        <include reference="byb-fg-R5c"/>
+                                        <include reference="b3j-fR-4Ih"/>
+                                        <include reference="mnI-En-eod"/>
+                                        <include reference="d7X-aX-R0L"/>
+                                        <include reference="xkG-nE-82g"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="S5y-5l-31D"/>
+                                        <include reference="t1G-R8-xqw"/>
+                                        <include reference="GXh-Ad-bGu"/>
+                                        <include reference="Ys8-6j-jpf"/>
+                                        <include reference="Cvu-rg-QSf"/>
+                                        <include reference="lYN-CY-xju"/>
+                                        <include reference="Oq5-1X-iCI"/>
+                                        <include reference="daq-dE-gNp"/>
+                                        <include reference="ODN-UF-854"/>
+                                        <include reference="Obr-4a-lVS"/>
+                                        <include reference="OEm-dY-EgI"/>
+                                        <include reference="sgz-Fh-cFl"/>
+                                        <include reference="GEb-fD-vQd"/>
+                                        <include reference="aiX-7H-ROu"/>
+                                        <include reference="TFc-fk-P4s"/>
+                                        <include reference="qts-8o-vKO"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.90436815693430661" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="to0-yV-pWH" secondAttribute="centerY" id="GFK-FN-fED"/>
+                            <constraint firstAttribute="centerX" secondItem="to0-yV-pWH" secondAttribute="centerX" id="qXM-8f-rpP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="to0-yV-pWH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="GFK-FN-fED"/>
+                                <exclude reference="qXM-8f-rpP"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="to0-yV-pWH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="GFK-FN-fED"/>
+                                <include reference="qXM-8f-rpP"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="MorseLightImageView" destination="d7X-aX-R0L" id="l56-QI-jGD"/>
+                        <outlet property="MorseResult" destination="xkG-nE-82g" id="vr8-5n-BUv"/>
+                        <outlet property="btn_OK" destination="mnI-En-eod" id="doD-eS-JA8"/>
+                        <outlet property="txtbx_Input" destination="b3j-fR-4Ih" id="p3n-Ci-iGr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="513" y="366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Blank" width="500" height="378"/>
+        <image name="morselight.jpg" width="1200" height="801"/>
+    </resources>
 </document>

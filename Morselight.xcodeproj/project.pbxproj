@@ -13,6 +13,11 @@
 		AFFEF4821A20E17800E50385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFEF4811A20E17800E50385 /* Images.xcassets */; };
 		AFFEF4851A20E17800E50385 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFEF4831A20E17800E50385 /* LaunchScreen.xib */; };
 		AFFEF4911A20E17800E50385 /* MorselightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFEF4901A20E17800E50385 /* MorselightTests.swift */; };
+		AFFEF49B1A20F66700E50385 /* morselight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFFEF49A1A20F66700E50385 /* morselight.jpg */; };
+		AFFEF49D1A2107E000E50385 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFEF49C1A2107E000E50385 /* AVFoundation.framework */; };
+		AFFEF49F1A21082500E50385 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFEF49E1A21082500E50385 /* CoreGraphics.framework */; };
+		AFFEF4A11A21083400E50385 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFEF4A01A21083400E50385 /* UIKit.framework */; };
+		AFFEF4A31A21084400E50385 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFEF4A21A21084400E50385 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		AFFEF48A1A20E17800E50385 /* MorselightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorselightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEF48F1A20E17800E50385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFFEF4901A20E17800E50385 /* MorselightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorselightTests.swift; sourceTree = "<group>"; };
+		AFFEF49A1A20F66700E50385 /* morselight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = morselight.jpg; path = Images.xcassets/morselight.jpg; sourceTree = "<group>"; };
+		AFFEF49C1A2107E000E50385 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AFFEF49E1A21082500E50385 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AFFEF4A01A21083400E50385 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AFFEF4A21A21084400E50385 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFEF49D1A2107E000E50385 /* AVFoundation.framework in Frameworks */,
+				AFFEF49F1A21082500E50385 /* CoreGraphics.framework in Frameworks */,
+				AFFEF4A11A21083400E50385 /* UIKit.framework in Frameworks */,
+				AFFEF4A31A21084400E50385 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +73,10 @@
 		AFFEF46C1A20E17800E50385 = {
 			isa = PBXGroup;
 			children = (
+				AFFEF4A21A21084400E50385 /* Foundation.framework */,
+				AFFEF4A01A21083400E50385 /* UIKit.framework */,
+				AFFEF49E1A21082500E50385 /* CoreGraphics.framework */,
+				AFFEF49C1A2107E000E50385 /* AVFoundation.framework */,
 				AFFEF4771A20E17800E50385 /* Morselight */,
 				AFFEF48D1A20E17800E50385 /* MorselightTests */,
 				AFFEF4761A20E17800E50385 /* Products */,
@@ -80,6 +98,7 @@
 				AFFEF47A1A20E17800E50385 /* AppDelegate.swift */,
 				AFFEF47C1A20E17800E50385 /* ViewController.swift */,
 				AFFEF47E1A20E17800E50385 /* Main.storyboard */,
+				AFFEF49A1A20F66700E50385 /* morselight.jpg */,
 				AFFEF4811A20E17800E50385 /* Images.xcassets */,
 				AFFEF4831A20E17800E50385 /* LaunchScreen.xib */,
 				AFFEF4781A20E17800E50385 /* Supporting Files */,
@@ -195,6 +214,7 @@
 				AFFEF4801A20E17800E50385 /* Main.storyboard in Resources */,
 				AFFEF4851A20E17800E50385 /* LaunchScreen.xib in Resources */,
 				AFFEF4821A20E17800E50385 /* Images.xcassets in Resources */,
+				AFFEF49B1A20F66700E50385 /* morselight.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
